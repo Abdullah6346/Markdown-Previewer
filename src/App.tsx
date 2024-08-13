@@ -6,9 +6,8 @@ import markdown from "./Components/markdown";
 function App() {
   const [editor, seteditor] = useState(markdown);
 
-  const handlechange = (e: Event) => {
-    const target = e.target as HTMLInputElement;
-    seteditor(target.value);
+  const handlechange = (e: any) => {
+    seteditor(e.target.value);
   };
 
   return (
