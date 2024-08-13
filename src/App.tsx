@@ -8,8 +8,8 @@ function App() {
   };
   return (
     <>
-      <div onChange={handlechange} className="Wrapper_tex_ar  ">
-        <textarea name="editor" id="editor"></textarea>
+      <div className="Wrapper_tex_ar  ">
+        <textarea name="editor" id="editor" onChange={handlechange}></textarea>
       </div>
       <div id="Preview">{editor}</div>
     </>
